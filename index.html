@@ -40,7 +40,7 @@
         </div> -->
         <header class="hero">
             <div>
-                <a href="#about">Logo Image</a>
+                <a href="#about">Logo</a>
             </div>
             <div>
                 <ul class="navBar">
@@ -61,7 +61,20 @@
             </section>
         </header>
         <section class="contact">
-            <div>Contact Form</div>
+            <div class="contactContainer">
+                <div class="contactFormContainer">
+                    <form class="contactForm">
+                        <label class="contactFormLabel" for="name">Name</label>
+                        <input id="name" class="contactFormName" type="text" placeholder="Name" name="name">
+                        <label class="contactFormLabel" for="email">Email</label>
+                        <input id="email" class="contactFormEmail" type="email" placeholder="Email" name="email">
+                        <label class="contactFormLabel" for="message">Message</label>
+                        <textarea name="message" id="message" class="contactFormMessage" rows="4" placeholder="Message..."></textarea>
+                        <button class="contactFormSubmit" type="submit">Send</button>
+                    </form>
+                </div>
+                <div class="contactLogo">Alt Logo</div>
+            </div>
         </section>
     </div>
 </body>

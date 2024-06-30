@@ -1,3 +1,21 @@
+/*
+Theme Name: -
+Theme URI: -
+Author: Cam Hayes
+Author URI: -
+Description: First attempt at a css stylesheet from scratch. Please bear with me.
+Tags: -
+Version: 1.0
+Requires at least: -
+Tested up to: -
+License: -
+License URI: -
+Text Domain: -
+*/
+
+/* GENERAL STYLES (*, body, h1, ul, blockquote, etc.) */
+
+/* :root refers to the root of a tree representing the document (<html>) and is a good place to create global variables */
 :root {
     --primary-color: #180f4b;
     --text-primary-color: #292929;
@@ -36,3 +54,18 @@
     box-sizing: border-box;
     color: black
 }
+
+/* UTILITIES 
+*  (If you have a few styling choices you know you will want to apply to lots of different elements, 
+*  they can be put in this section.)
+*  ex. removing default list styling
+*  .nobullets {
+*  list-style: none;
+*  margin: 0;
+*  padding: 0;
+*  }
+*/
+
+/* SITEWIDE (For things like the basic page layout, the header, navigation styling, etc.) */
+
+/* SPECIFIC PAGE/CONTEXT/COMPONENT */

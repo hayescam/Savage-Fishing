@@ -13,9 +13,9 @@ License URI: -
 Text Domain: -
 */
 
-/* GENERAL STYLES (*, body, h1, ul, blockquote, etc.) */
+/* GENERAL STYLES (:root, *, body, h1, ul, blockquote, etc.) */
 
-/* :root refers to the root of a tree representing the document (<html>) and is a good place to create global variables */
+/* :root refers to the root of a tree representing the document (the <html> tag) and is a good place to create global variables */
 :root {
     --primary-color: #180f4b;
     --text-primary-color: #292929;
@@ -67,5 +67,24 @@ Text Domain: -
 */
 
 /* SITEWIDE (For things like the basic page layout, the header, navigation styling, etc.) */
+.logoContainer {
+    display: flex;
+    align-items: center;
+}
+.navBarContainer {
+    display: flex;
+    box-shadow: 0px 2px 11px #180f4b;
+}
+.navBar {
+    display: flex;
+}
+.navBarItem {
+    display: flex;
+    align-items: center;
+    font-size: var(--fz-xs);
+    margin: 0 10px;
+    padding: 20px;
+    text-decoration: none;
+}
 
 /* SPECIFIC PAGE/CONTEXT/COMPONENT */

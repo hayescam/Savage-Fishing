@@ -37,7 +37,6 @@ Text Domain: -
     --bp-lg: 992px;
     --bp-xl: 1200px
 }
-
 [data-theme=dark] {
     --primary-color: #3dd9e7;
     --text-primary-color: #ccd6f6;
@@ -47,13 +46,13 @@ Text Domain: -
     --bg-secondary-color: #112a4f;
     --bg-shadow: rgba(61,75,100,.7)
 }
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     color: black
 }
+
 
 /* UTILITIES 
 *  (If you have a few styling choices you know you will want to apply to lots of different elements, 
@@ -77,6 +76,7 @@ Text Domain: -
 }
 .navBar {
     display: flex;
+    margin-right: 6rem;
 }
 .navBarItem {
     display: flex;
@@ -88,3 +88,31 @@ Text Domain: -
 }
 
 /* SPECIFIC PAGE/CONTEXT/COMPONENT */
+
+.heroAboutSection {
+    margin: 1rem;
+    align-items: center;
+    text-align: center;
+}
+.heroIntroText, .heroIntroImages {
+    margin: 10rem;
+}
+.heroIntroImages {
+    margin-top: 20rem;
+}
+.contactInfo {
+    margin: 1rem;
+}
+.contactContainer {
+    margin: 0 0 0 40%;
+    text-align: left;
+}
+ul {
+    list-style-position: inside;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+li::marker {
+    content: url("../media/logo.svg");
+}

@@ -35,7 +35,8 @@ Text Domain: -
     --bp-sm: 600px;
     --bp-md: 768px;
     --bp-lg: 992px;
-    --bp-xl: 1200px
+    --bp-xl: 1200px;
+    font-size: 1.25rem;
 }
 [data-theme=dark] {
     --primary-color: #3dd9e7;
@@ -46,14 +47,35 @@ Text Domain: -
     --bg-secondary-color: #112a4f;
     --bg-shadow: rgba(61,75,100,.7)
 }
-* {
+*, body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: black
+    color: white;
+    border-width: 0.1rem;
+    border-color: rebeccapurple;
+    border-style: solid;
 }
-
-
+html {
+    border-width: 1em;
+    border-color: blue;
+    border-style:solid;
+}
+body {
+    background: #E4D1AF;
+    border-width: 0.5em;
+    border-color: red;
+    border-style: solid;
+}
+ul {
+    list-style-position: inside;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+main{
+    display: flexbox;
+}
 /* UTILITIES 
 *  (If you have a few styling choices you know you will want to apply to lots of different elements, 
 *  they can be put in this section.)
@@ -67,22 +89,24 @@ Text Domain: -
 
 /* SITEWIDE (For things like the basic page layout, the header, navigation styling, etc.) */
 .logoContainer {
-    display: flex;
+    width:100%;
+    display: block;
     align-items: center;
 }
 .navBarContainer {
     display: flex;
     box-shadow: 0px 2px 11px #180f4b;
+    border-color: yellow;
 }
 .navBar {
     display: flex;
-    margin-right: 6rem;
+    padding-right: 6rem;
 }
 .navBarItem {
     display: flex;
     align-items: center;
     font-size: var(--fz-xs);
-    margin: 0 10px;
+    margin: 0 5em;
     padding: 20px;
     text-decoration: none;
 }
@@ -95,24 +119,20 @@ Text Domain: -
     text-align: center;
 }
 .heroIntroText, .heroIntroImages {
-    margin: 10rem;
+    margin: 1rem;
 }
 .heroIntroImages {
-    margin-top: 20rem;
+    padding: 20rem;
 }
 .contactInfo {
     margin: 1rem;
 }
 .contactContainer {
-    margin: 0 0 0 40%;
+    margin-right: 30%;
+    padding: 1rem;
     text-align: left;
 }
-ul {
-    list-style-position: inside;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-li::marker {
-    content: url("../media/logo.svg");
+.fullContainer {
+    width: 100%;
+    height: 100%;
 }
